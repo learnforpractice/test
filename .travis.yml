@@ -1,0 +1,8 @@
+language: python
+dist: xenial
+jobs:
+  include:
+  - name: "3.7 Unit Test"
+    python: "3.7"
+    env: TEST_SUITE=suite_3_5_unit
+script: python3.7 ./test.py $TEST_SUITE
